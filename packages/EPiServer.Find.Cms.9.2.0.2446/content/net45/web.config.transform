@@ -1,0 +1,20 @@
+<configuration>
+  <episerver.shell>
+    <protectedModules>
+      <add name="Find">
+        <assemblies>
+          <add assembly="EPiServer.Find.UI" />
+          <add assembly="EPiServer.Find.Cms" />
+        </assemblies>
+      </add>
+    </protectedModules>
+  </episerver.shell>
+  <location path="EPiServerFindEmbeddedResources">
+    <system.webServer>
+      <handlers>
+        <clear />
+        <add name="wildcard" path="*" verb="*" type="EPiServer.Web.StaticFileHandler, EPiServer.Framework" />
+      </handlers>
+    </system.webServer>
+  </location>
+</configuration>
