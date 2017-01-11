@@ -1,5 +1,5 @@
 ﻿/*
-Commerce Starter Kit for EPiServer
+EPi Commerce for EPiServer
 
 All rights reserved. See LICENSE.txt in project root.
 
@@ -15,7 +15,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("OXX AS and BV Network AS")]
-[assembly: AssemblyProduct("Commerce Starter Kit")]
+[assembly: AssemblyProduct("EPi Commerce")]
 [assembly: AssemblyCopyright("See license.txt")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

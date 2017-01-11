@@ -1,5 +1,5 @@
 /*
-Commerce Starter Kit for EPiServer
+EPi Commerce for EPiServer
 
 All rights reserved. See LICENSE.txt in project root.
 

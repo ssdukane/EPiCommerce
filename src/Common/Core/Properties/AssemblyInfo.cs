@@ -1,5 +1,5 @@
 ﻿/*
-Commerce Starter Kit for EPiServer
+EPi Commerce for EPiServer
 
 All rights reserved. See LICENSE.txt in project root.
 
@@ -15,11 +15,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Oxx Commerce Starter Kit")]
+[assembly: AssemblyTitle("Oxx EPi Commerce")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Oxx Commerce Starter Kit")]
+[assembly: AssemblyProduct("Oxx EPi Commerce")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

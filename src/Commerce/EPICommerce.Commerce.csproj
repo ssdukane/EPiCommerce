@@ -4060,7 +4060,7 @@
     <Content Include="Configs\ecf.security.config" />
     <Content Include="Configs\ecf.ssl.config" />
     <Content Include="Configs\ecf.workflow.config" />
-    <Content Include="CommerceStarterKit.Commerce.nuspec" />
+    <Content Include="EPiCommerce.Commerce.nuspec" />
     <Content Include="Apps\Reporting\Datasets\Reports.xsc">
       <DependentUpon>Reports.xsd</DependentUpon>
     </Content>

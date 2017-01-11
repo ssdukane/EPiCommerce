@@ -186,7 +186,7 @@
     <Content Include="Plugins\CommerceTools\static\scripts\bootstrap-timepicker.min.js" />
     <Content Include="Plugins\CommerceTools\static\scripts\bootstrap.js" />
     <Content Include="Plugins\CommerceTools\static\scripts\bootstrap.min.js" />
-    <Content Include="CommerceStarterKit.Web.nuspec" />
+    <Content Include="EpiCommerce.Web.nuspec" />
     <Content Include="Content\css\editorNames.less" />
     <None Include="Content\css\print.less" />
     <None Include="Content\css\hotspotseditor\hotspotseditor.less" />
