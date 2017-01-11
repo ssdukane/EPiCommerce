@@ -1,0 +1,18 @@
+﻿@using EPICommerce.Web.Helpers
+@model EPICommerce.Web.Controllers.WineProductSearchBlockController.WineProductSearchResult
+
+@{
+    Layout = null;
+}
+<div class="product-list">
+
+    
+    <h2>@Html.PropertyFor(p => p.Heading)</h2>
+
+    @foreach (var product in Model.Products)
+    {
+        <div class="col-sm-4">
+            @Html.Partial("ProductPartials/_ProductListView", product)
+        </div>
+    }
+</div>

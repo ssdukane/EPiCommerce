@@ -1,0 +1,13 @@
+﻿@using EPICommerce.Web.Helpers
+@using EPICommerce.Web.Models.ViewModels
+@model EPICommerce.Web.Models.PageTypes.BlogPage
+@{
+	Layout = null;
+	var page = new PageListBlockItemViewModel(Model);
+	var tag = ViewData["Tag"] as string;
+	page.ImageExtraUrlParameters = Html.GetImageWidth(tag);
+}
+<div class="page-partial">
+	@Html.Partial("PagePartials/_PageListItem", page)
+</div>
+

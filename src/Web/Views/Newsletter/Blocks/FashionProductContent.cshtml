@@ -1,0 +1,37 @@
+﻿@using EPiServer.ServiceLocation
+@using EPICommerce.Web.Extensions
+@using EPICommerce.Web.Models.ViewModels.Simple
+@using EPICommerce.Web.Services
+@model EPICommerce.Web.Models.Catalog.FashionProductContent
+@{
+	Layout = null;
+
+    // TODO: Hack - should change model to this one
+    var productService = ServiceLocator.Current.GetInstance<ProductService>();
+    var product = productService.GetProductListViewModel(Model);
+	var image = Html.AssetImageUrls(Model).FirstOrDefault();
+	if (image.Contains(","))
+	{
+		image = image.Split(',')[0];
+	}
+	var imageWidth = ViewData["imageWidth"];
+}
+<center class="product">
+	<div class="image">
+		<a href="@Url.ContentUrl(Model.ContentLink)">
+			@if (image != null)
+			{
+				<img class="img-responsive center" src="@(image + imageWidth)" />
+			}
+			else
+			{
+				<img class="img-responsive no-image center" src="/siteassets/system/no-image.png@(imageWidth)">
+			}
+		</a>
+	</div>
+	<div class="newitemtext">@Model.NewItemText &nbsp;</div>
+	<h2 class="name">@Model.DisplayName</h2>
+    <div class="price">
+        @product.PriceString
+    </div>
+</center>

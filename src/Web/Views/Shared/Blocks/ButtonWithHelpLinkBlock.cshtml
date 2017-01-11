@@ -1,0 +1,28 @@
+﻿@using EPICommerce.Web.Helpers
+@model EPICommerce.Web.Models.Blocks.ButtonWithHelpLinkBlock
+@{
+	int helpReference = 0;
+
+	string helpHref = "javascript:;";
+	string helpTarget = "";
+
+	if (Model.HelpLink != null)
+	{
+		helpReference = UrlHelpers.GetReferenceFromUrl(Model.HelpLink);
+		if (helpReference == 0)
+		{
+			helpHref = Url.ContentUrl(Model.HelpLink);
+			helpTarget = "target=_blank";
+		}
+	}
+	bool isAbsoluteUri = Model.Link != null && Model.Link.IsAbsoluteUri;
+}
+@if (Model != null && !string.IsNullOrEmpty(Model.Text))
+{
+	<a class="btn btn-primary btn-sm" href="@(Model.Link != null ?  Url.ContentUrl(Model.Link) : "javascript:;")" @(isAbsoluteUri ? "target=_blank" : "")>@Model.Text</a>
+    if (Model.HelpLink != null)
+    {
+        // this uses the HelpDialog.js to attach a click event to show a modal dialog with the content of the page we link to
+        <a class="btn btn-primary btn-sm help" href="@helpHref" data-reference="@helpReference" @helpTarget>?</a>
+    }
+}

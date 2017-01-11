@@ -1,0 +1,18 @@
+﻿@model EPICommerce.Web.Models.ViewModels.Payment.GenericPaymentViewModel<EPICommerce.Web.Models.PageTypes.Payment.GenericPaymentPage>
+
+
+<div class="orders-page">
+    <h1>@Model.CurrentPage.PageName</h1>
+
+    @Html.PropertyFor(x => x.CurrentPage.MainBody)
+
+
+    @using (Html.BeginForm())
+    {
+            <div class="col-lg-6">
+                <input type="submit" value="Complete order" class="btn btn-primary" />
+            </div>
+
+
+    }
+</div>
